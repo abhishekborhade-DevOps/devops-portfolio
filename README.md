@@ -13,9 +13,6 @@
 </div>
 
 ---
-## Architecture Diagram
-
-![Multi Cloud Architecture](1-multi-cloud-architecture/architecture-diagram/multi-cloud-architecture.png)
 
 ## Projects
 
