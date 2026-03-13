@@ -1,0 +1,45 @@
+###############################################################################
+# terraform.tfvars.example
+#
+# Copy this file to terraform.tfvars and fill in your values.
+# NEVER commit terraform.tfvars to version control (it contains secrets).
+# terraform.tfvars is already in .gitignore.
+###############################################################################
+
+#------------------------------------------------------------------------------
+# General
+#------------------------------------------------------------------------------
+project_name = "multi-cloud-vpn"
+environment  = "dev"
+owner        = "your-name"
+
+#------------------------------------------------------------------------------
+# AWS Configuration
+#------------------------------------------------------------------------------
+aws_region              = "us-east-1"
+aws_vpc_cidr            = "10.0.0.0/16"
+aws_public_subnet_cidr  = "10.0.1.0/24"
+aws_private_subnet_cidr = "10.0.2.0/24"
+aws_instance_type       = "t3.micro"
+aws_key_name            = "your-aws-key-pair-name"   # Must exist in the target region
+allowed_ssh_cidr        = "YOUR_PUBLIC_IP/32"         # Replace with: curl -s ifconfig.me
+aws_bgp_asn             = 64512
+
+#------------------------------------------------------------------------------
+# GCP Configuration
+#------------------------------------------------------------------------------
+gcp_project_id   = "your-gcp-project-id"
+gcp_region       = "us-central1"
+gcp_zone         = "us-central1-a"
+gcp_vpc_cidr     = "10.1.0.0/16"
+gcp_subnet_cidr  = "10.1.1.0/24"
+gcp_machine_type = "e2-micro"
+gcp_bgp_asn      = 65000
+
+#------------------------------------------------------------------------------
+# VPN Pre-Shared Keys
+# Use strong random values: openssl rand -base64 32
+# These MUST match between AWS and GCP tunnel configuration
+#------------------------------------------------------------------------------
+vpn_tunnel1_psk = "REPLACE-WITH-STRONG-RANDOM-PSK-1"
+vpn_tunnel2_psk = "REPLACE-WITH-STRONG-RANDOM-PSK-2"
