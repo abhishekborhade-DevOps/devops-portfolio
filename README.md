@@ -20,7 +20,7 @@
 |---|---------|--------|--------|
 | 1 | [**Multi-Cloud Architecture: AWS ↔ GCP Secure Connectivity**](1-multi-cloud-architecture/) | Terraform, AWS VPN, GCP HA VPN, BGP, Multi-Cloud Networking | ✅ Complete |
 | 2 | DevOps CI/CD Pipeline Automation *(planned)* | GitHub Actions, Docker, CI/CD, Security Scanning | :soon: Planned |
-| 3 | Platform Engineering: Kubernetes Infrastructure *(planned)* | EKS, GKE, Terraform, Cluster Autoscaling | :soon: Planned |
+| 3 | Platform Engineering: Kubernetes Infrastructure | EKS, GKE, Terraform, Cluster Autoscaling | :soon: Planned |
 
 ---
 
