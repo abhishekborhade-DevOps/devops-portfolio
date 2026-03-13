@@ -13,6 +13,9 @@
 </div>
 
 ---
+## Architecture Diagram
+
+![Multi Cloud Architecture](1-multi-cloud-architecture/architecture-diagram/multi-cloud-architecture.png)
 
 ## Projects
 
@@ -28,7 +31,7 @@
 ## Quick Start
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/devops-portfolio.git
+git clone https://github.com/abhishekborhade-DevOps/devops-portfolio.git
 cd devops-portfolio
 make help
 ```
